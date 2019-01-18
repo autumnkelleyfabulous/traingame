@@ -1,0 +1,77 @@
+<!DOCYTPE html>
+
+<html lang="en-us">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Train Game</title>
+
+ <!-- Sources -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <link rel="stylesheet"  type="text/css" href="assets/css/style.css">
+  </head>
+<body>
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Anytime is Train Time</h1>
+      <p class="lead">Choo Choo. Chee Chee</p>
+
+      <div class="card">
+          <div class="card-header"> Current Train Schedule</div>
+          <table class="table" id="train sched">
+              <thread>
+                  <tr>
+                      <th scope="col"> Train Name</th>
+                      <th scope="col"> Desitnation</th>
+                      <th scope="col"> Frequency</th>
+                      <th scope="col"> Next Arrival</th>
+                      <th scope="col"> Minutes Away</th>
+                  </tr>
+              </thread>
+              <tbody>
+                  <tr>
+                      <td>682</td>
+                      <td>Laguna Niguel</td>
+                      <td>85</td>
+                      <td>8:11 AM</td>
+                      <td>45</td>
+                  </tr>
+                  <tr>
+                      <td> 600</td>
+                      <td> Anaheim</td>
+                      <td> 43 </td>
+                      <td> 7:29 AM</td>
+                      <td> 10</td>
+                  </tr>
+              </tbody>
+          </table>
+          <div class="card">
+            <div class="card-header"> Add Train</div>
+            <table class="table" id="Add Train">
+            <form>
+                <div class="form-group"> </div>
+                    <label for="tName">Train Name</label>
+                    <input type="text" class="form-control" id="tName"
+            
+                <div class="form-group"> </div>
+                     <label for="destination">Destination</label>
+                    <input type="text" class="form-control" id="destination"
+       
+                 <div class="form-group"> </div>
+                    <label for="ftrain">First Train( HH:mm - Military Time)</label>
+                    <input type="text" class="form-control" id="ftrain"
+            </form>
+            <button type="submit" class="btn" id="submit">Let's go!</button>
+      </div>
+    </div>
+  </div>
+  <script src="assets/javascript/game.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+  </body>
+  </html>
